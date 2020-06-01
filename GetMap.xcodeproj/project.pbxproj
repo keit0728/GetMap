@@ -15,6 +15,8 @@
 		238582E92485373F000E88F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238582E72485373F000E88F9 /* LaunchScreen.storyboard */; };
 		238582F42485373F000E88F9 /* GetMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238582F32485373F000E88F9 /* GetMapTests.swift */; };
 		238582FF2485373F000E88F9 /* GetMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238582FE2485373F000E88F9 /* GetMapUITests.swift */; };
+		2385830E24853A3D000E88F9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2385830D24853A3D000E88F9 /* MapKit.framework */; };
+		2385831024853A48000E88F9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2385830F24853A48000E88F9 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		238582FA2485373F000E88F9 /* GetMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		238582FE2485373F000E88F9 /* GetMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMapUITests.swift; sourceTree = "<group>"; };
 		238583002485373F000E88F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2385830D24853A3D000E88F9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2385830F24853A48000E88F9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2385831024853A48000E88F9 /* CoreLocation.framework in Frameworks */,
+				2385830E24853A3D000E88F9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,7 @@
 				238582F22485373F000E88F9 /* GetMapTests */,
 				238582FD2485373F000E88F9 /* GetMapUITests */,
 				238582DA2485373D000E88F9 /* Products */,
+				2385830C24853A3D000E88F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +133,15 @@
 				238583002485373F000E88F9 /* Info.plist */,
 			);
 			path = GetMapUITests;
+			sourceTree = "<group>";
+		};
+		2385830C24853A3D000E88F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2385830F24853A48000E88F9 /* CoreLocation.framework */,
+				2385830D24853A3D000E88F9 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JD52V8SCB5;
 				INFOPLIST_FILE = GetMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JD52V8SCB5;
 				INFOPLIST_FILE = GetMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
